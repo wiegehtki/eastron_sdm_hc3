@@ -36,30 +36,3 @@ Diese QuickApp dient der Abfrage der meisten Parameter der Eastron SDM630 / SDM 
 Verwendung auf eigenes Risiko, ich habe das Gerät für meine eigenen Zwecke geschrieben und der Code kann ohne jegliche Garantie auf Vollständigkeit und Richtigkeit verwendet werden. Wenn du kein Risiko eingehen willst, lass es einfach. Der Code kann sich noch ändern.
 
 Viel Spaß!
-
-```lua
--- Beispiel für eine Konfiguration der Variablen in LUA
-MODBUS_IP = "192.168.1.100"
-MODBUS_PORT = 502
-UNIT_ID = 1
-INTERVALL = 30
-ICON_PARENT = 1234
-ICON_CHILDS = "1234,5678"
-DEVICE_TYPE = "SDM630"
-UNIT_IDS = "1,2,3"
-SDM_ACTIVE = false
-```
-
-```lua
--- Beispiel für ChildDevicesDetails
-ChildDevicesDetails = {
-    { name = "Voltage L1", enabled = true, unit = "V", deviceType = "com.fibaro.binarySensor", id = 1 },
-    { name = "Voltage L2", enabled = true, unit = "V", deviceType = "com.fibaro.binarySensor", id = 2 },
-    { name = "Voltage L3", enabled = true, unit = "V", deviceType = "com.fibaro.binarySensor", id = 3 },
-    -- Für V2-Geräte letzte zwei Zeilen löschen
-    { name = "Power L1", enabled = true, unit = "W", deviceType = "com.fibaro.binarySensor", id = 4 },
-    { name = "Power L2", enabled = true, unit = "W", deviceType = "com.fibaro.binarySensor", id = 5 }
-}
-```
-
-Du kannst diesen Text als README.md auf GitHub einstellen, um die Installation und Konfiguration der QuickApp zu dokumentieren.
